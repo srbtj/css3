@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{ height: 200px;position: relative;
+            border: 5px solid #000; padding: 10px;
+            display:box;
+            /** chrome , opera , safari  : 浏览器内核  -webkit-*/
+            display: -webkit-box;
+            /** firefox ： 浏览器内核 ： -moz-*/
+            display: -moz-box;
+            /** ie 10 浏览器内核 ：-ms-*/
+            display: -ms-flexbox;
+
+            /** 盒模型对齐方式 */
+            /** -webkit- */
+            -webkit-box-align:center;
+
+            /** -moz- */
+            -moz-box-align:center;
+
+            /** -ms- */
+            -ms-flex-align:center;
+
+            box-align:center;
+
+            /** box-direction : 指定显示哪个方向的box的子元素 */
+            /** -webkit- */
+            -webkit-box-direction : reverse;
+
+            /** -moz-box-direction */
+            -moz-box-direction:reverse;
+
+            /** -ms-flex-direction  */
+            -ms-flex-direction:row-reverse;
+
+            box-direction:reverse;
+
+      }
+        .box div{ width: 100px; height: 100px; background-color: greenyellow; border: 1px solid white;}
+        .list{ width: 500px; height: 100px; border: 1px solid greenyellow; margin-top: 10px;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: box;
+        }
+        .list .p1{
+            border: 1px solid red;
+            -webkit-box-flex: 1.0;
+            -moz-box-flex:1.0;
+            -ms-flex:1.0;
+            box-flex:1.0;
+        }
+        .list .p2{ border: 1px solid blue;
+            -webkit-box-flex:2.0;
+            -moz-box-flex:2.0;
+            -ms-flex:2.0;
+            box-flex:2.0;
+        }
+
+        .div1{
+            border: 1px solid green;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: box;
+        }
+
+        .div1 .ordinal1{
+            margin: 5px;
+            -webkit-box-ordinal-group:2;
+            -moz-box-ordinal-group:2;
+            -ms-flex-order:2;
+            box-ordinal-group:2
+        }
+
+        .div1 .ordinal2{
+            margin: 5px;
+            -webkit-box-ordinal-group:1;
+            -moz-box-ordinal-group:1;
+            -ms-flex-order:1
+            box-ordinal-group:1
+        }
+
+        .div2{
+            border: 1px solid blueviolet;
+            width: 350px;
+            height: 100px;;
+
+            /** -webkit-   chrome opera safari*/
+            display:-webkit-box;
+            -webkit-box-align:center;   /** box-align: 指定上下居中 */
+            -webkit-box-pack:center;    /** box-pack: 指定左右居中;*/
+
+            /** -moz-  firefox */
+            display: -moz-box;
+            -moz-box-align:center;
+            -moz-box-pack:center;
+
+            /** -ms- IE10 */
+            display: -ms-flexbox;
+            -ms-flex-align:center;
+            -ms-flex-pack:center;
+
+            /** W3C */
+            display:box;
+            box-align:center;
+            box-pack:center;
+        }
+
+        .div3{
+            margin:10px 50px;
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            box-shadow: -10px 10px 5px pink
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</div>
+
+<div class="list">
+    <p class="p1">111</p>
+    <p class="p2">222</p>
+</div>
+
+<div class="div1">
+    <div class="ordinal1">first</div>
+    <div class="ordinal2">second</div>
+    <div class="ordinal2">third</div>
+</div>
+
+<div class="div2"> Center content </div>
+
+<div class="div3"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{ width:100px; height: 50px;-webkit-border-image: url("../images/bt_blue.png") 0 10;
+         border-left-width:10px; border-right-width:10px;}
+        /***
+          边框图片  border-image :
+            border-image-source : 引入图片
+            border-image-slice : 切割图片
+            border-image-width : 边框宽度
+            border-image-repeat : 图片的排列方式;
+                - round  平铺
+                - repeat 重复
+                - stretch 拉伸
+        **/
+        .box2{ width: 100px; height: 100px; border-width: 20px;
+            border-image: url("../images/border.png") 27 27 repeat;
+            -webkit-border-image: url("../images/border.png") 27 repeat;
+            -moz-border-image: url("../images/border.png") 27 27 repeat repeat;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box">背景图片</div>
+<div class="box2"></div>
+</body>
+</html>

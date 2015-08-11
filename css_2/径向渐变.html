@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /** 径向渐变 ： 颜色结点均匀分布  默认情况 */
+        .box1{
+            width: 100px; height: 100px; margin: 10px auto;
+            background: radial-gradient(red,green,blue); /**标准*/
+            background: -webkit-radial-gradient(red,green,blue);
+            background: -moz-radial-gradient(red,green,blue);
+            background: -o-radial-gradient(red,green,blue)
+        }
+
+        /** 径向渐变 ： 颜色结点不均匀分布 */
+        .box2{
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            background: radial-gradient(red 5%,green 40%,blue 80%);
+            background: -webkit-radial-gradient(red 5%,green 40%,blue 80%);
+            background: -moz-radial-gradient(red 5%,green 40%,blue 80%);
+            background: -o-radial-gradient(red 5%,green 40%,blue 80%);
+        }
+
+        /** 径向渐变 ： 设置形状 */
+        .box3{
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            background: radial-gradient(circle,red,green,blue);
+            background: -webkit-radial-gradient(circle,red,green,blue);
+            background: -moz-radial-gradient(circle,red,green,blue);
+            background: -o-radial-gradient(circle,green,blue);
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+
+</body>
+</html>

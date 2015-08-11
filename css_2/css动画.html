@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: greenyellow;
+            animation: myfirst 2s;
+            -webkit-animation:myfirst 2s;
+            -o-animation:myfirst 2s;
+            -moz-animation:myfirst 2s;
+        }
+
+        @keyframes myfirst{
+            from { background: greenyellow;}
+            to { background: blueviolet;}
+        }
+        @-webkit-keyframes  myfirst{
+            from { background: greenyellow}
+            to { background: blueviolet}
+        }
+        @-moz-keyframes myfirst{
+            from { background: greenyellow}
+            to { background: blueviolet}
+        }
+        @-o-keyframes myfirst{
+            from { background: greenyellow}
+            to { background: blueviolet}
+        }
+
+        @keyframes mySecond {
+            0% { background: red;}
+            25% { background: greenyellow;}
+            50% { background: green;}
+            75% { background: blueviolet;}
+            100% { background: blue;}
+        }
+        @-webkit-keyframes mySecond {
+            0% { background: red;}
+            25% { background: greenyellow;}
+            50% { background: green;}
+            75% { background: blueviolet;}
+            100% { background: blue;}
+        }
+
+        @-moz-keyframes mySecond {
+            0% { background: red;}
+            25% { background: greenyellow;}
+            50% { background: green;}
+            75% { background: blueviolet;}
+            100% { background: blue;}
+        }
+
+        @-o-keyframes mySecond {
+            0% { background: red;}
+            25% { background: greenyellow;}
+            50% { background: green;}
+            75% { background: blueviolet;}
+            100% { background: blue;}
+        }
+
+        .box2{
+            width: 100px; height: 100px;
+            margin: 10px auto;
+            border: 1px solid #000;
+            background: red;
+            animation:mySecond 5s;
+            -webkit-animation:mySecond 5s;
+            -moz-animation:mySecond 5s;
+            -o-animation:mySecond 5s;
+        }
+
+        .box3{
+            width: 100px;
+            height: 100px;
+            background: greenyellow;
+            position: absolute;
+            left: 100px;
+            top: 250px;
+            animation: myThird 5 infinites;
+            -webkit-animation:myThird 5s infinite;
+            -moz-animation:myThird 5s infinite;
+            -o-animation:myThird 5s infinite;
+        }
+
+        @keyframes myThird{
+            0% { background: greenyellow; left: 100px; top: 250px;}
+            25% { background: green; left: 200px; top: 250px;}
+            50% { background: blueviolet; left: 200px; top: 350px;}
+            75% { background: blue; left: 100px; top: 350px;}
+            100% { background: orange; left: 100px; top: 250px;}
+        }
+
+        @-webkit-keyframes  myThird{
+            0% { background: greenyellow; left: 100px; top: 250px;}
+            25% { background: green; left: 200px; top: 250px;}
+            50% { background: blueviolet; left: 200px; top: 350px;}
+            75% { background: blue; left: 100px; top: 350px;}
+            100% { background: orange; left: 100px; top: 250px;}
+        }
+
+        @-moz-keyframes  myThird{
+            0% { background: greenyellow; left: 100px; top: 250px;}
+            25% { background: green; left: 200px; top: 250px;}
+            50% { background: blueviolet; left: 200px; top: 350px;}
+            75% { background: blue; left: 100px; top: 350px;}
+            100% { background: orange; left: 100px; top: 250px;}
+        }
+
+        @-o-keyframes  myThird{
+            0% { background: greenyellow; left: 100px; top: 250px;}
+            25% { background: green; left: 200px; top: 250px;}
+            50% { background: blueviolet; left: 200px; top: 350px;}
+            75% { background: blue; left: 100px; top: 350px;}
+            100% { background: orange; left: 100px; top: 250px;}
+        }
+
+        .box4{
+            width: 100px;
+            height: 100px;
+            left: 400px;
+            top: 250px;
+            background: greenyellow;
+            position: absolute;
+            animation:myFour 5s infinite alternate;
+            -webkit-animation:myFour 5s infinite alternate;
+            -moz-animation:myFour 5s infinite alternate;
+            -o-animation:myFour 5s infinite alternate;
+
+        }
+
+        @keyframes myFour {
+            0% { background: greenyellow; left: 400px; top: 250px;}
+            25% { background: green; left: 500px; top: 250px;}
+            50% { background: blueviolet; left: 500px; top: 350px;}
+            75% { background: blue ; left: 400px; top: 350px;}
+            100% { background: orange; left: 400px; top: 250px;}
+        }
+
+        @-webkit-keyframes myFour {
+            0% { background: greenyellow; left: 400px; top: 250px;}
+            25% { background: green; left: 500px; top: 250px;}
+            50% { background: blueviolet; left: 500px; top: 350px;}
+            75% { background: blue ; left: 400px; top: 350px;}
+            100% { background: orange; left: 400px; top: 250px;}
+        }
+
+        @-moz-keyframes myFour {
+            0% { background: greenyellow; left: 400px; top: 250px;}
+            25% { background: green; left: 500px; top: 250px;}
+            50% { background: blueviolet; left: 500px; top: 350px;}
+            75% { background: blue ; left: 400px; top: 350px;}
+            100% { background: orange; left: 400px; top: 250px;}
+        }
+
+        @-o-keyframes myFour {
+            0% { background: greenyellow; left: 400px; top: 250px;}
+            25% { background: green; left: 500px; top: 250px;}
+            50% { background: blueviolet; left: 500px; top: 350px;}
+            75% { background: blue ; left: 400px; top: 350px;}
+            100% { background: orange; left: 400px; top: 250px;}
+        }
+
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+</body>
+</html>

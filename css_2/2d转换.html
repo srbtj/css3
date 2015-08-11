@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /** rotate : 旋转指定角度*/
+        .box{
+            margin: 10px auto;
+            transform:rotate(-30deg);
+            -ms-transform:rotate(-30deg);
+            -webkit-transform:rotate(-30deg);
+        }
+
+        /*** translate : 移动指定位置 */
+        div{
+            width: 100px; height: 100px; background: greenyellow;
+        }
+
+        div.box1{
+            border: 1px solid red;
+            transform:translate(30px,-30px);
+            -webkit-transform:translate(30px,-30px);
+            -ms-transform:translate(30px,-30px);
+        }
+
+        div.box2{
+            margin: 30px auto;
+            transform:scale(2,2);
+            -webkit-transform:scale(2,2);
+            -ms-transform:scale(2,2);
+        }
+
+        div.box3{
+            transform:skew(30deg,30deg);
+            -webkit-transform:skew(30deg,30deg);
+            -ms-transform:skew(30deg,30deg);
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div></div>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+</body>
+</html>
